@@ -20,6 +20,8 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
+            }
+            article{
                 display: flex;
             }
 
@@ -38,13 +40,47 @@
             <p>A musica como forma de expressao, emoçao, cultura e conexao entre as pessoas</p>
         </header>
         <main>
-            <img src="imagem.blog.png" alt="Voz e a musica em harmonia: icone estilizado de microfone entrelaçado a uma clave de sol vibrando em um fundi vermellho fechado">
-            <div>
+            <article>
+                <img src="imagem.blog.png" alt="Voz e a musica em harmonia: icone estilizado de microfone entrelaçado a uma clave de sol vibrando em um fundi vermellho fechado">
+                <div>
+    
+                    <h2>A musica e sua importancia na vida das pessoas</h2>
+                    <p class="artigo-autor">Por: Natiely Chagas</p>
+                    <p>Neste trabalho, irei falar sobre a musica, seus diferentes estilos e a forma como ela esta presente em nosso cotidiano. Tambem vou mostrar como a musica pode transmitir sentimentos, expressar diferentes culturas e marcar momentos importantes da vida das pessoas.</p>
+                    <button>🎵 <span>0</span></button>
+                    <button>❤️ <span>0</span></button>
+                    
+                </div>
+            </article>
 
-                <h2>A musica e sua importancia na vida das pessoas</h2>
-                <p class="artigo-autor">Por: Natiely Chagas</p>
-                <p>Neste trabalho, irei falar sobre a musica, seus diferentes estilos e a forma como ela esta presente em nosso cotidiano. Tambem vou mostrar como a musica pode transmitir sentimentos, expressar diferentes culturas e marcar momentos importantes da vida das pessoas.</p>
-            </div>
+            <article>
+                <img src="imagem.blog.png" alt="Voz e a musica em harmonia: icone estilizado de microfone entrelaçado a uma clave de sol vibrando em um fundi vermellho fechado">
+              <div>
+    
+                  <h2>A influencia da musica no cotidiano</h2>
+                  <p class="artigo-autor">Por: Natiely Chagas</p>
+                  <p>A musica esta presente em diferentes momentos da vida das pessoas e pode transmitir sentimentos, ideias e emoçoes. Ela pode ser usada para expressar alegria, tristeza, cultura e ate mesmo historias de diferentes epocas. Alem disso, existem diversos generos musicais, cada um com suas proprias caracteristicas e formas de expressao. Ao longo deste trabalho, serao apresentados alguns desses generos e a impotancia que eles possuem</p>
+                  <button>🎵 <span>0</span></button>
+                  <button>❤️ <span>0</span></button>
+                  
+              </div>
+            </article>
+
         </main>
-    </body>
+</body>
+<script>
+    const botoes= document.querySelectorAll ("button");
+
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", botaoclicado);
+        function botaoclicado(){
+             console.log("fui clicado");
+             let texto = botao.querySelector("span")
+             texo.textContent++;
+        }
+
+    })
+
+
+</script>
 </html>
