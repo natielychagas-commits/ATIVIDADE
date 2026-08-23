@@ -44,18 +44,23 @@
              <p class="artigo-autor">Por: Natiely Chagas</p>
              <p>Nesse trabalho, irei falar sobre música, seus diferentes estilos e a forma como ela está presente no cotidiano. Também vou mostrar como a música pode transmitir sentimos, expressar diferentes culturas e marcar momentos importantes na vida das pessoas; </p>
              <button>🎵<span>0</span></button>
+             <button>❤️ <span>0</span></button>
             </div>
          <main>
      </body>
      <script>
-        const botao= document.querySelector("button");
-        botao.addEventListener("click", botaoClicado)
+        const botoes= document.querySelectorAll("button");
 
-        function botaoClicado(){
-            console.log("fui clicado");
-            let texto = botao.querySelector("span")
-            texto.textContent++;
-        }
+        botoes.forEach(function(botao){
+            botao.addEventListener("click", botaoClicado)
+            function botaoClicado(){
+                console.log("fui clicado");
+                let texto = botao.querySelector("span")
+                texto.textContent++;
+            }
 
+        })
+
+        
      </script>
 </html>
